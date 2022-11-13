@@ -1,0 +1,24 @@
+{
+  "name": "psrd-2022-slush-rush-layouts",
+  "version": "1.0.0",
+  "source": "src/module.js",
+  "author": "Corvimae",
+  "license": "MIT",
+  "context": "browser",
+  "outputFormat": "commonjs",
+  "distDir": "dist",
+  "scripts": {
+    "watch": "npx parcel watch",
+    "build": "npx parcel build"
+  },
+  "dependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.7.0"
+  },
+  "nodecg": {
+    "compatibleRange": "^1.5.0",
+    "cartographer": true
+  }
+}

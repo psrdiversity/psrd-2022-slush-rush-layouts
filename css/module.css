@@ -1,0 +1,192 @@
+html {
+  font-size: 24px;
+}
+
+body {
+  font-family: 'Futura Md BT', sans-serif;
+  background-color: #f0f;
+}
+
+.info-block {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 0.5rem 2rem 0.5rem 1rem; 
+  text-align: center;
+  word-wrap: normal;
+}
+
+.info-block:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #FEFEFE;
+  transform-origin: 100% 0;
+  transform: skew(-20deg);
+  z-index: -2;
+}
+
+.info-block-backdrop {
+  position: absolute;
+  top: 2px;
+  right: 20px;
+  width: 50%;
+  height: calc(100% - 4px);
+  background: #F9F5F4 ;
+  transform-origin: 100% 0;
+  transform: skew(-20deg);
+  z-index: -1;
+}
+
+.run-info-center .info-block:after {
+  display: none;
+}
+
+.run-info-center .info-block {
+  clip-path: polygon(0 100%, 16px 0, 100% 0, calc(100% - 16px) 100%);
+  background: #FEFEFE;
+  padding: 0.5rem 2rem;
+}
+
+.runner-info:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  z-index: -3;
+}
+
+.run-details {
+  width: calc(100% - 4rem);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  color: #fff;
+  font-size: 0.825rem;
+  justify-content: space-between;
+}
+
+.run-info-center .run-details {
+  clip-path: polygon(0 100%, 16px 0, 100% 0, calc(100% - 16px) 100%);
+  background: rgba(0, 0, 0, 0.75);
+  padding: 0.25rem 2rem;
+  margin: 0 auto;
+}
+
+
+.run-info-center .run-details:after {
+  display: none;
+}
+
+.run-details:after {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.runner-info {
+  margin-top: 0;
+  width: max-content;
+  box-sizing: content-box;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem 4rem 0.25rem 1rem;
+}
+
+.runner-info:after {
+  width: calc(100% - 2rem);
+}
+
+.category-name {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  line-height: 1.3;
+}
+
+.estimate {
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.pronouns {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  margin-left: 0.5rem;
+  font-size: 0.5rem;
+  padding: 0 0.6rem 0 0.25rem;
+  margin: 0.25rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  color: #fff;
+  margin-left: auto;
+  z-index: 1;
+}
+
+.pronouns:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #8A58C1;
+  transform-origin: 100% 0;
+  transform: skew(-20deg);
+  z-index: -2;
+}
+
+.commentator-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.25rem;
+}
+
+.commentator-info {
+  display: flex;
+  color: #fff;
+  background-color: #333233;
+  border-radius: 4px;
+  justify-content: space-between;
+  font-size: 0.825rem;
+  overflow: hidden;
+}
+
+.commentator-name {
+  padding: 0.25rem 0.5rem;
+}
+
+.commentator-info.runner {
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+
+.commentator-info.runner .pronouns {
+  margin-left: 1rem;
+  font-size: 0.625rem;
+  padding-right: 0.9rem;
+}
+
+.timer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: #fff;
+  padding: 0 2rem;
+  font-variant-numeric: tabular-nums;
+  clip-path: polygon(0 100%, 16px 0, 100% 0, calc(100% - 16px) 100%);
+  background: #A952BA;
+}
+
+.psrd-source {
+  border: 2px solid rgba(0, 0, 0, 0.75);
+}
