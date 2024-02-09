@@ -1,0 +1,37 @@
+name: interview
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: stretch
+  children:
+  - type: column
+    width: 50%
+    margin: auto 0
+    children:
+    - type: source
+      id: interview-feed-1
+      margin: 0.25rem
+      resolution: 16x9
+    - type: nameplate
+      name: Etchy
+      pronouns: he/him
+      subtitle: Team Lead - PSR Diversity
+      margin: 0.25rem 4rem
+  - type: column
+    width: 50%
+    margin: auto 0
+    children:
+    - type: source
+      id: interview-feed-2
+      margin: 0.25rem
+      resolution: 16x9
+    - type: nameplate
+      name: Cayla Perez
+      pronouns: she/hers/her
+      subtitle: Mentor - EWAAB
+      margin: 0.25rem 4rem
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar
+

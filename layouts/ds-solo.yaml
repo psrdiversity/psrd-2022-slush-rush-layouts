@@ -1,0 +1,61 @@
+name: ds-solo
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: stretch
+  children:
+  - type: column
+    width: stretch
+    margin: 0.25rem
+    children:
+    - type: row
+      children:   
+      - type: source
+        id: webcam
+        resolution: 4x3
+        width: calc(50% - 0.25rem)
+        margin: { bottom: 0.25rem }
+      - type: source
+        id: game-feed-2
+        width: calc(50% - 0.25rem)
+        margin: { left: 0.5rem }
+        resolution: 4x3
+    - type: column
+      height: stretch
+      justify: center
+      margin: 1rem 2rem
+      children:
+      - type: timer
+      - type: runner
+        team: 0
+        mixerSlotName: runner1
+        margin: 0.5rem 0
+      - type: commentators
+        adjustNameSizes: true
+      - type: column
+        height: stretch
+        justify: center
+        alignItems: center
+        children:
+        - type: image
+          src: http://archenreactor.local:9090/bundles/psrd-2022-slush-rush-layouts/images/PSR_Diversity_Logo.png
+          width: 300px
+  - type: column
+    width: 1120
+    children:
+    - type: source
+      id: game-feed
+      resolution: 4x3
+      margin: 0.25rem 0.25rem 0.25rem 0
+    - type: row
+      height: stretch
+      alignItems: center
+      justify: flex-end
+      children:
+      - type: run-info
+        sidebar: true
+
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar

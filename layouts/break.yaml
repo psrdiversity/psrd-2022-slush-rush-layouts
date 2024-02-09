@@ -1,0 +1,51 @@
+name: break
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: stretch
+  children:
+  - type: column
+    width: 40%
+    margin: auto 0
+    children:
+    - type: eventTitle
+    - type: donationTotal
+      margin: 2rem 4rem 0 4rem
+    - type: image
+      width: 100%
+      padding: 0 8rem
+      margin: { top: 2rem }
+      speed: 10000
+      transitionSpeed: 500
+      src:
+      - http://archenreactor.local:9090/bundles/psrd-2022-slush-rush-layouts/images/PSR_Diversity_Logo.png
+      - http://archenreactor.local:9090/bundles/psrd-2022-slush-rush-layouts/images/EWAAB_Logo.png
+  - type: column
+    width: stretch
+    margin: 4rem 0.5rem
+    children:
+    - type: upcomingRun
+      index: 0
+    - type: upcomingRun
+      index: 1
+      margin: { top: 1rem }
+    - type: upcomingRun
+      index: 2
+      margin: { top: 1rem }
+    - type: upcomingRun
+      index: 3
+      margin: { top: 1rem }
+    - type: upcomingRun
+      index: 4
+      margin: { top: 1rem }
+    - type: upcomingRun
+      index: 5
+      margin: { top: 1rem }
+- type: row
+  height: 80
+  className: break-screen-omnibar
+  children:
+  - type: nowPlaying
+  - type: donateCTA
+    width: stretch
+  - type: hostData

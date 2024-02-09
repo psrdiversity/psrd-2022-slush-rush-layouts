@@ -12,6 +12,8 @@
     "build": "npx parcel build"
   },
   "dependencies": {
+    "chokidar": "^3.5.3",
+    "dayjs": "^1.11.6",
     "react": "^18.2.0"
   },
   "devDependencies": {
@@ -19,6 +21,12 @@
   },
   "nodecg": {
     "compatibleRange": "^1.5.0",
-    "cartographer": true
+    "cartographer": true,
+    "mount": [
+      {
+        "directory": "images",
+        "endpoint": "images"
+      }
+    ]
   }
 }

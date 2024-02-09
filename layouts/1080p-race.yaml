@@ -1,0 +1,69 @@
+name: 1080p-race
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: 540
+  children:
+  - type: column
+    width: 50%
+    children:
+    - type: source
+      id: game-feed-1
+      margin: 0.25rem
+      resolution: 16x9
+  - type: column
+    width: 50%
+    children:
+    - type: source
+      id: game-feed-2
+      margin: 0.25rem
+      resolution: 16x9
+- type: row
+  height: stretch
+  justify: center
+  alignItems: center
+  margin: { top: 0.5rem, left: 4rem, right: 4rem }
+  children:
+  - type: column
+    width: 400
+    children:
+    - type: source
+      id: webcam-1
+      width: 400
+      resolution: 4x3
+    - type: runner
+      team: 0
+      mixerSlotName: runner1
+      margin: { top: 0.5rem }
+  - type: column
+    width: stretch
+    alignItems: center
+    margin:
+      horizontal: 1rem
+    children:
+    - type: run-info
+      width: 100%
+      sidebar: false
+    - type: timer
+      width: max-content
+      margin: 1rem 0
+    - type: commentators
+      width: 100%;
+      padding: 0 4rem
+      showLabel: true
+  - type: column
+    width: 400
+    children:
+    - type: source
+      id: webcam-2
+      width: 400
+      resolution: 4x3
+    - type: runner
+      team: 1
+      mixerSlotName: runner2
+      margin: { top: 0.5rem }
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar
+

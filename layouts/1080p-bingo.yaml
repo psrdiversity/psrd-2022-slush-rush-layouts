@@ -1,0 +1,56 @@
+name: 1080p-bingo
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: stretch
+  children:
+  - type: column
+    width: stretch
+    margin: 0.25rem
+    children:
+    - type: source
+      id: webcam
+      resolution: 4x3
+    - type: runner
+      team: 0
+      mixerSlotName: runner1
+      margin: 0.5rem 0
+    - type: commentators
+      adjustNameSizes: true
+      margin: { bottom: 0.5rem }
+    - type: source
+      id: bingo
+      resolution: 1x1
+    # - type: column
+    #   height: stretch
+    #   justify: center
+    #   alignItems: center
+    #   children:
+    #     - type: image
+    #       src: http://archenreactor.local:9090/bundles/psrd-2022-slush-rush-layouts/images/PSR_Diversity_Logo.png
+    #       width: 100%
+    #       padding: 4rem
+  - type: column
+    width: 1440
+    children:
+    - type: source
+      id: game-feed
+      resolution: 16x9
+      margin: 0.25rem 0.25rem 0.25rem 0
+    - type: row
+      height: stretch
+      alignItems: center
+      children:
+      - type: column
+        width: stretch
+        justify: center
+        children:
+        - type: timer
+        margin: 0 2rem
+      - type: run-info
+        sidebar: true
+        width: 800
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar

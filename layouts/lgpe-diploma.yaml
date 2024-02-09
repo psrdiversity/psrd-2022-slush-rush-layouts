@@ -1,0 +1,76 @@
+name: lgpe-diploma
+sourceWrapper: source-wrapper
+root:
+- type: row
+  children:
+  - type: column
+    width: 50%
+    children:
+    - type: source
+      id: game-feed-1
+      height: 540
+      margin: 0.25rem
+      resolution: 16x9
+    - type: source
+      id: tracker-1
+      margin: 0.25rem
+      resolution: 930x120
+  - type: column
+    width: 50%
+    children:
+    - type: source
+      id: game-feed-2
+      margin: 0.25rem
+      height: 540
+      resolution: 16x9
+    - type: source
+      id: tracker-2
+      margin: 0.25rem
+      resolution: 930x120
+- type: row
+  height: stretch
+  justify: center
+  alignItems: center
+  children:
+  - type: column
+    width: 400
+    alignItems: center
+    children:
+    - type: source
+      id: webcam-1
+      width: 300
+      resolution: 4x3
+    - type: runner
+      width: 400
+      team: 0
+      mixerSlotName: runner2
+      margin: { top: 0.25rem }
+  - type: column
+    width: max-content
+    alignItems: center
+    margin:
+      horizontal: 1rem
+    children:
+    - type: run-info
+      sidebar: false
+    - type: timer
+      width: max-content
+      margin: 1rem 0
+  - type: column
+    width: 400
+    alignItems: center
+    children:
+    - type: source
+      id: webcam-2
+      width: 300
+      resolution: 4x3
+    - type: runner
+      team: 1
+      mixerSlotName: runner2
+      width: 400
+      margin: { top: 0.25rem }
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar
+

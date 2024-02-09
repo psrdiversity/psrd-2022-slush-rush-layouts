@@ -1,0 +1,94 @@
+name: 1080p-race-3p
+sourceWrapper: source-wrapper
+root:
+- type: row
+  justify: space-between
+  children:
+  - type: column
+    width: 40%
+    children:
+    - type: source
+      id: game-feed-1
+      margin: 0.25rem
+      resolution: 16x9
+    - type: runner
+      team: 0
+      mixerSlotName: runner1
+      margin: 0 4rem
+  - type: column
+    width: calc(20% - 0.5rem)
+    margin: 0.25rem
+    children:
+    - type: column
+      justify: space-between
+      height: stretch
+      margin: { bottom: 54px}
+      children:
+      - type: source
+        id: webcam-1
+        width: 272
+        resolution: 4x3
+      - type: source
+        margin: { left: auto}
+        id: webcam-2
+        width: 272
+        resolution: 4x3
+  - type: column
+    width: 40%
+    children:
+    - type: source
+      id: game-feed-2
+      margin: 0.25rem
+      resolution: 16x9
+    - type: runner
+      team: 1
+      mixerSlotName: runner2
+      margin: 0 4rem
+- type: row
+  justify: space-between
+  margin: { top: 0.25rem }
+  height: stretch
+  children:
+  - type: column
+    width: 40%
+    children:
+    - type: source
+      id: game-feed-3
+      margin: 0.25rem
+      resolution: 16x9
+    - type: runner
+      team: 2
+      mixerSlotName: runner3
+      margin: 0 4rem
+  - type: column
+    width: calc(20% - 0.5rem)
+    margin: 0.25rem
+    children:
+    - type: column
+      justify: space-between
+      height: stretch
+      margin: { bottom: 54px }
+      children:
+      - type: source
+        id: webcam-1
+        width: 272
+        resolution: 4x3
+  - type: column
+    width: 40%
+    margin: { top: 2rem }
+    alignItems: center
+    children:
+    - type: run-info
+      width: 100%
+      sidebar: true
+    - type: timer
+      margin: 1rem 0
+    - type: commentators
+      width: 100%
+      padding: 0 4rem
+      showLabel: true
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar
+

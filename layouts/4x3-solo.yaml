@@ -1,0 +1,47 @@
+name: 4x3-solo
+sourceWrapper: source-wrapper
+root:
+- type: row
+  height: stretch
+  children:
+  - type: column
+    width: stretch
+    children:
+    - type: source
+      id: webcam
+      resolution: 4x3
+      margin: 0.25rem
+    - type: run-info
+      sidebar: true
+      leftAligned: true
+    - type: runner
+      team: 0
+      mixerSlotName: runner1
+      margin: 0.5rem
+    - type: timer
+      margin: 0.25rem 0.5rem
+    - type: commentators
+      adjustNameSizes: true
+      height: stretch
+      alignItems: center
+      margin: 0.5rem
+    # - type: column
+    #   height: stretch
+    #   justify: center
+    #   alignItems: center
+    #   children:
+    #   - type: image
+    #     src: http://archenreactor.local:9090/bundles/psrd-2022-slush-rush-layouts/images/PSR_Diversity_Logo.png
+    #     width: 100%
+    #     padding: 4rem
+  - type: column
+    width: 1320
+    children:
+    - type: source
+      id: game-feed
+      resolution: 4x3
+      margin: 0.25rem 0.25rem 0.25rem 0
+- type: source
+  height: 80
+  ignoreWrapper: true
+  id: omnibar
